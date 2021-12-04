@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "629701674893",
+    "firebase_url": "https://ride-dec66-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ride-dec66",
+    "storage_bucket": "ride-dec66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629701674893:android:08d9c922bd2f3c15241fc4",
+        "android_client_info": {
+          "package_name": "com.fillacar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629701674893-4v3hj68em41u4rb8t67u4pdr2su0ofak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDg-Z79Fs1nLqsWCd4jthQbCGa_F3M6uE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629701674893-4v3hj68em41u4rb8t67u4pdr2su0ofak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629701674893:android:16f31389a8fc65f5241fc4",
+        "android_client_info": {
+          "package_name": "com.poliheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629701674893-4v3hj68em41u4rb8t67u4pdr2su0ofak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDg-Z79Fs1nLqsWCd4jthQbCGa_F3M6uE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629701674893-4v3hj68em41u4rb8t67u4pdr2su0ofak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
