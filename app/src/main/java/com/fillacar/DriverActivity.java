@@ -35,34 +35,31 @@ public class DriverActivity extends AppCompatActivity {
         String value=getIntent().getStringExtra("inst");
         int s= Integer.parseInt(value);
         if(s==0) {
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Gigel Gigeleanul", "17.15 500m"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Bos de boss", "17.25 an fatza pe avari"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Ionel Ionut", "11.21 200m"));
-
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Gigel Gigeleanul", "17.15 300m"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Bos de boss", "17.25 500m"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Ionel Ionut", "11.21 213m"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Gigel Gigeleanul", "17.15 100000m"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Bos de boss", "17.25 an fatza pe avari"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Ionel Ionut", "11.21 Strada"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Gigel Gigeleanul", "17.15 Floresti"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Bos de boss", "17.25 an fatza pe avari"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Ionel Ionut", "11.21 Strada"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Gigel Gigeleanul", "17.15 Floresti"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Bos de boss", "17.25 an fatza pe avari"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Ionel Ionut", "11.21 Strada"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Gigel Gigeleanul", "17.15 Floresti"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Bos de boss", "17.25 an fatza pe avari"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Ionel Ionut", "11.21 Strada"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Gigel Gigeleanul", "17.15 Floresti"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Bos de boss", "17.25 an fatza pe avari"));
-            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Ionel Ionut", "11.21 Strada"));
+            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Costin Stan", "17:00 500m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Ciprian Simion", "17:03 100m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Robert Cristi", "17:05 200m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Theodor Florian", "17:08 50m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Gabi Iulian", "17:10 400m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Iuliu Raluca", "17:11 40m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_driver, "Denis Ramona", "17:12 350m"));
         }
         else
         {
-            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "dddd", "17.15 500m"));
-            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "ffff", "17.25 an fatza pe avari"));
-            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Issss", "11.21 200m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Neculai David", "17:00 10m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Olga Cristian", "17:01 20m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Lidia Timotei", "17:02 40m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Petronela Valerian", "17:03 100m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Virgil Eliza", "17:03 15m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Ghiță Theodor", "17:05 20m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Vasilica Eliza", "17:06 30m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Rareș Livia", "17:06 35m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Dorian Angela", "17:06 60m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Adam Marius", "17:07 100m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Theodor Clara", "17:07 80m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Olimpia Ilie", "17:09 25m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Manuel Flaviu", "17:10 75m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Anamaria Ștefania", "17:11 50m"));
+            exampleList.add(new ExampleItem(R.drawable.ic_passanger, "Ruxandra Filip", "17:15 23m"));
         }
         mRecyclerView=findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
