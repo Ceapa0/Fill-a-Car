@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 
 import java.lang.reflect.Array;
@@ -78,7 +79,6 @@ public class DriverActivity extends AppCompatActivity {
                 mAdapter.notifyItemChanged(position);
                 Intent intent = new Intent(getApplicationContext(), MapActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 getApplicationContext().startActivity(intent);
             }
         });
@@ -110,6 +110,12 @@ public class DriverActivity extends AppCompatActivity {
             }
         }
         mAdapter.filterList(filteredList);
+    }
+    public void chooseLocation(View view)
+    {
+        Intent intent=new Intent(view.getContext(),MapsActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        view.getContext().startActivity(intent);
     }
 
 }
