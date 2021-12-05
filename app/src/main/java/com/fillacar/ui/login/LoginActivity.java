@@ -2,20 +2,8 @@ package com.fillacar.ui.login;
 
 import static android.content.ContentValues.TAG;
 
-import android.app.Activity;
-
-import androidx.annotation.NonNull;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -28,11 +16,16 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.fillacar.DriverActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+
 import com.fillacar.MenuActivity;
 import com.fillacar.R;
-import com.fillacar.ui.login.LoginViewModel;
-import com.fillacar.ui.login.LoginViewModelFactory;
 import com.fillacar.databinding.ActivityLoginBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -51,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         mAuth = FirebaseAuth.getInstance();
 
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
@@ -87,20 +80,7 @@ public class LoginActivity extends AppCompatActivity {
         loginViewModel.getLoginResult().observe(this, new Observer<LoginResult>() {
             @Override
             public void onChanged(@Nullable LoginResult loginResult) {
-//                if (loginResult == null) {
-//                    return;
-//                }
-//                loadingProgressBar.setVisibility(View.GONE);
-//                if (loginResult.getError() != null) {
-//                    showLoginFailed(loginResult.getError());
-//                }
-//                if (loginResult.getSuccess() != null) {
-//                    updateUiWithUser(loginResult.getSuccess());
-//                }
-//                setResult(Activity.RESULT_OK);
-//
-//                //Complete and destroy login activity once successful
-//                finish();
+
             }
         });
 
@@ -169,9 +149,6 @@ public class LoginActivity extends AppCompatActivity {
                             Intent intent=new Intent(getApplicationContext(), MenuActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             getApplicationContext().startActivity(intent);
-//
-//                            //Complete and destroy login activity once successful
-//                            finish();
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -203,9 +180,6 @@ public class LoginActivity extends AppCompatActivity {
                             Intent intent=new Intent(getApplicationContext(), MenuActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             getApplicationContext().startActivity(intent);
-//
-//                            //Complete and destroy login activity once successful
-//                            finish();
 
                         } else {
                             // If sign in fails, display a message to the user.
