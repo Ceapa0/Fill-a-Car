@@ -8,7 +8,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -26,6 +28,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.fillacar.DriverActivity;
+import com.fillacar.MenuActivity;
 import com.fillacar.R;
 import com.fillacar.ui.login.LoginViewModel;
 import com.fillacar.ui.login.LoginViewModelFactory;
@@ -160,10 +164,14 @@ public class LoginActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             loginViewModel.login(email, password);
 
-                            setResult(Activity.RESULT_OK);
+//                            setResult(Activity.RESULT_OK);
 
-                            //Complete and destroy login activity once successful
-                            finish();
+                            Intent intent=new Intent(getApplicationContext(), MenuActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            getApplicationContext().startActivity(intent);
+//
+//                            //Complete and destroy login activity once successful
+//                            finish();
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -190,10 +198,14 @@ public class LoginActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             loginViewModel.login(email, password);
 
-                            setResult(Activity.RESULT_OK);
+//                            setResult(Activity.RESULT_OK);
 
-                            //Complete and destroy login activity once successful
-                            finish();
+                            Intent intent=new Intent(getApplicationContext(), MenuActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            getApplicationContext().startActivity(intent);
+//
+//                            //Complete and destroy login activity once successful
+//                            finish();
 
                         } else {
                             // If sign in fails, display a message to the user.
